@@ -38,6 +38,7 @@ $library = array(
 		)
 	, 'advanced'=> array(
 		  $desc
+		, new Example('example-date')
 		, new Example('example-arrayShuffle')
 		, new Example('example-timerSpeed')
 		)

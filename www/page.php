@@ -7,7 +7,6 @@
 		displayHeader($pageName);
 		displayExamples($examples);
 		displayFooter();
-		displayHTMLFooter();
 	}
 
 	function displayNavigation() {
@@ -48,6 +47,7 @@
 	function displayFooter() {
 		echo '<div class="floatClear"></div>';
 		displayNavigation();
+		echo '</body></html>';
 	}
 ?>
 
@@ -73,7 +73,7 @@
 			<link rel="stylesheet" type="text/css" href="./ps/css/ps-style.css" />
 			
 			<script type="text/javascript" src="./ps/aq.min.js"></script>
-			<script type="text/javascript" src="./ps/ps.js"></script>
+			<script type="text/javascript" src="./ps/ps.min.js"></script>
 			
 			<script type="text/javascript" src="./ps/psReloader.js"></script>
 
@@ -99,15 +99,6 @@
 			<link rel="stylesheet" type="text/css" href="./css/examples.css">
 		</head>
 	<body>
-<?php
-	}
-?>
-
-<?php
-	function displayHTMLFooter() {
-?>
-			</body>
-		</html>
 <?php
 	}
 ?>
