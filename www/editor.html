@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Perlenspiel Editor</title>
+
+		<!-- Perlenspiel HTML -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<meta name="description" content="Perlenspiel 3.2" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="mobile-web-app-capable" content="yes" />
+
+		<link rel="shortcut icon" href="./ps/img/favicon.png" />
+		<link rel="apple-touch-icon" href="./ps/img/apple-touch-icon.png" />
+		<link rel="apple-touch-icon-precomposed" href="./ps/img/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="./ps/css/ps-style.css" />
+		
+		<script type="text/javascript" src="./ps/aq.min.js"></script>
+		<script type="text/javascript" src="./ps/ps.min.js"></script>
+		
+		<script type="text/javascript" src="./ps/psReloader.js"></script>
+
+		<!-- CodeMirror -->
+		<script type="text/javascript" src="./codemirror/lib/codemirror.js"></script>
+		<script type="text/javascript" src="./codemirror/mode/javascript.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/lint/lint.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/lint/javascript-lint.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/selection/active-line.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/edit/matchbrackets.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/fold/foldcode.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/fold/foldgutter.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/fold/brace-fold.js"></script>
+		<script type="text/javascript" src="./codemirror/addon/fold/comment-fold.js"></script>
+		<!-- JS Hint -->
+		<script type="text/javascript" src="./lib/jshint.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./codemirror/lib/codemirror.css" />
+		<link rel="stylesheet" type="text/css" href="./codemirror/addon/fold/foldgutter.css" />
+		<link rel="stylesheet" type="text/css" href="./codemirror/addon/lint/lint.css" />
+		<link rel="stylesheet" type="text/css" href="./codemirror/theme/monokai.css" />
+		
+		<link rel="stylesheet" type="text/css" href="./editor/editor.css">
+	</head>
+	<body>
+		<div class="column col-left">
+			<textarea id="code" name="code" style="display: none;">
+// Perlenspiel 3.2
+(function() {
+var PS = PERLENSPIEL.Create({namespace:"perlenspiel", requireEvents:false});
+
+PS.init = function( system, options ) {
+	"use strict";
+
+	// Use PS.gridSize( x, y ) to set the grid to
+	// the initial dimensions you want (32 x 32 maximum)
+	// Do this FIRST to avoid problems!
+	// Otherwise you will get the default 8x8 grid
+
+	PS.gridSize( 8, 8 );
+};
+
+PS.touch = function( x, y, data, options ) {
+	"use strict";
+};
+
+PS.release = function( x, y, data, options ) {
+	"use strict";
+};
+
+PS.enter = function( x, y, data, options ) {
+	"use strict";
+};
+
+PS.exit = function( x, y, data, options ) {
+	"use strict";
+};
+
+PS.exitGrid = function( options ) {
+	"use strict";
+};
+
+PS.keyDown = function( key, shift, ctrl, options ) {
+	"use strict";
+};
+
+PS.keyUp = function( key, shift, ctrl, options ) {
+	"use strict";
+};
+
+PS.input = function( sensors, options ) {
+	"use strict";
+};
+
+PS.start();
+})();
+			</textarea>
+		</div>
+		<div class="column col-right">
+			<div id="perlenspiel"></div>
+		</div>
+		<script src="./editor/game.js" type="text/javascript"></script>
+		<script src="./editor/editor.js" type="text/javascript"></script>
+	</body>
+</html>

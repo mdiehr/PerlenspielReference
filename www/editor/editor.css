@@ -1,0 +1,38 @@
+body {
+	color: black;
+	background-color: white;
+	padding: 0;
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+	-webkit-user-drag: text;
+}
+
+.reload-button {
+	cursor: pointer;
+	padding: 4px;
+	position: absolute;
+	top: 0;
+}
+
+.CodeMirror {
+	height: auto;
+	width: 700px;
+	border: 2px solid #202020;
+}
+
+.column {
+	display: inline-table;
+	vertical-align: top;
+	/*float: left;*/
+}
+
+.col-left {
+}
+.col-right {
+	width: 512px;
+}

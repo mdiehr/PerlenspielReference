@@ -132,6 +132,7 @@ var ModulePSReload = function (my) {
 					styleActiveLine: true,
 				    lineWrapping: true,
     				foldGutter: true,
+					indentWithTabs: true,
 					gutters: ["CodeMirror-lint-markers", "CodeMirror-linenumbers", "CodeMirror-foldgutter"],
 					lint: { predef: ["PS"] },
 					extraKeys: {"Ctrl-Y": function(cm) { me.onReloadClick(sourceId); },
